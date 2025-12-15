@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>
+            Conversor de ángulos
+        </title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inknut+Antiqua"
+        >
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="miEstilo.css"
+        >
+
+        <script
+            src="funciones_js.js"
+            type="text/javascript"
+        ></script>
+    </head>
+
+    <body class="body-num">
+        <div class="centrado div-conver">
+            <h1>
+                Conversor de unidades
+            </h1>
+
+            <form>
+                <p>
+                    <label for="grados">
+                        Grados
+                    </label>
+                    =
+                    <input
+                        type="text"
+                        id="grados"
+                        name="unid_grados"
+                        onchange="convertirGR(this.id, this.value)"
+                    >
+                </p>
+
+                <p>
+                    <label for="radianes">
+                        Radianes
+                    </label>
+                    =
+                    <input
+                        type="text"
+                        id="radianes"
+                        name="unid_radianes"
+                        onchange="convertirGR(this.id, this.value)"
+                    >
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

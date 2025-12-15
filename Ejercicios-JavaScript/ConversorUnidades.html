@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Conversor de Unidades</title>
-    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
-    <link href="miEstilo.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="misFunciones.js"></script>
-</head>
-<body class="body-num">
+    <head>
+        <meta charset="UTF-8">
 
-<div class="centrado div-conver">
-    <h1>Conversor de Unidades</h1>
-    <form>
-        <p>
-            <label for="metro"> Metro</label> = <input id="metro" type="text" name="unid_metro">
-        </p>
-        <p>
-            <label for="pulgada"> Pulgada</label> = <input id="pulgada" type="text" name="unid_pulgada">
-        </p>
-        <p>
-            <label for="pie"> Pie </label> = <input id="pie" type="text" name="unid_pie">
-        </p>
-        <p>
-            <label for="yarda"> Yarda</label> = <input id="yarda" type="text" name="unid_yarda">
-        </p>
-    </form>
-</div>
-</body>
+        <title>
+            Conversor de medidas
+        </title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inknut+Antiqua"
+        />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="miEstilo.css"
+        />
+
+        <script
+            type="text/javascript"
+            src="funciones_js.js"
+        ></script>
+    </head>
+
+    <body class="body-num">
+        <div class="centrado div-conver">
+            <h1>
+                Conversor de unidades
+            </h1>
+
+            <form name="lasUnidades">
+                <p>
+                    <label for="metro">
+                        Metro
+                    </label>
+                    =
+                    <input
+                        id="metro"
+                        type="text"
+                        name="unid_metro"
+                        onchange="convertirUnidades(this.name, this.value)"
+                    >
+                </p>
+
+                <p>
+                    <label for="pulgada">
+                        Pulgada
+                    </label>
+                    =
+                    <input
+                        id="pulgada"
+                        type="text"
+                        name="unid_pulgada"
+                        onchange="convertirUnidades(this.name, this.value)"
+                    >
+                </p>
+
+                <p>
+                    <label for="pie">
+                        Pie
+                    </label>
+                    =
+                    <input
+                        id="pie"
+                        type="text"
+                        name="unid_pie"
+                        onchange="convertirUnidades(this.name, this.value)"
+                    >
+                </p>
+
+                <p>
+                    <label for="yarda">
+                        Yarda
+                    </label>
+                    =
+                    <input
+                        id="yarda"
+                        type="text"
+                        name="unid_yarda"
+                        onchange="convertirUnidades(this.name, this.value)"
+                    >
+                </p>
+            </form>
+        </div>
+    </body>
 </html>

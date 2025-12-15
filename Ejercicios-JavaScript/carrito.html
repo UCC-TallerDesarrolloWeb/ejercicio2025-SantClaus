@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>
+            Carrito de compras
+        </title>
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="catalogo.css"
+        />
+
+        <script
+            src="tienda.js"
+            type="text/javascript"
+        ></script>
+    </head>
+
+    <body
+        class="grid-container"
+        onload="cargarCarrito(); contarProductos();"
+    >
+        <header class="item1">
+            Carrito
+        </header>
+
+        <nav class="item2">
+            <a href="productos.html">
+                Catálogo
+            </a>
+
+            <a href="">
+                Carrito de compras
+            </a>
+
+            <div id="cant-prod">
+                0
+            </div>
+        </nav>
+
+        <main
+            id="carrito"
+            class="item4"
+        >
+            <!-- contenido del carrito -->
+        </main>
+
+        <footer class="item5">
+            Información de contacto
+        </footer>
+    </body>
+</html>

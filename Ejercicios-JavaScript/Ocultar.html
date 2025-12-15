@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>
+            Mostrar / Ocultar sección
+        </title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inknut+Antiqua"
+        >
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="miEstilo.css"
+        >
+
+        <script
+            type="text/javascript"
+            src="funciones_js.js"
+        ></script>
+    </head>
+
+    <body>
+        <h1>
+            Alternar visibilidad
+        </h1>
+
+        <form>
+            <p>
+                <input
+                    type="radio"
+                    id="mostrarDiv"
+                    name="rad_mostrar-ocultar"
+                    value="val_mostrar"
+                    onclick="MostrarOcultarDiv(this.id)"
+                >
+                <label for="mostrarDiv">
+                    Mostrar contenido
+                </label>
+            </p>
+
+            <p>
+                <input
+                    type="radio"
+                    id="ocultarDiv"
+                    name="rad_mostrar-ocultar"
+                    value="val_ocultar"
+                    onclick="MostrarOcultarDiv(this.id)"
+                >
+                <label for="ocultarDiv">
+                    Ocultar contenido
+                </label>
+            </p>
+        </form>
+
+        <div
+            class="color-div"
+            name="unDiv"
+        >
+            <p>
+                Esta sección puede mantenerse oculta según la necesidad.
+            </p>
+        </div>
+    </body>
+</html>

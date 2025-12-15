@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>
+            Cálculos matemáticos
+        </title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inknut+Antiqua"
+        >
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="miEstilo.css"
+        >
+
+        <script
+            type="text/javascript"
+            src="funciones_js.js"
+        ></script>
+    </head>
+
+    <body class="body-num">
+        <div class="centrado div-conver">
+            <h1>
+                Operaciones matemáticas
+            </h1>
+
+            <form class="operacionesMat">
+                <p>
+                    <input
+                        type="text"
+                        id="nums1"
+                        name="sum_num1"
+                        onchange="sumar(this.id)"
+                    >
+                    +
+                    <input
+                        type="text"
+                        id="nums2"
+                        name="sum_num2"
+                        onchange="sumar(this.id)"
+                    >
+                    =
+                    <input
+                        type="text"
+                        id="totalS"
+                        name="sum_total"
+                        disabled
+                    >
+                </p>
+
+                <p>
+                    <input
+                        type="text"
+                        id="numr1"
+                        name="res_num1"
+                        onchange="restar(this.id)"
+                    >
+                    −
+                    <input
+                        type="text"
+                        id="numr2"
+                        name="res_num2"
+                        onchange="restar(this.id)"
+                    >
+                    =
+                    <input
+                        type="text"
+                        id="totalR"
+                        name="res_total"
+                        disabled
+                    >
+                </p>
+
+                <p>
+                    <input
+                        type="text"
+                        id="numm1"
+                        name="mul_num1"
+                        onchange="multiplicar(this.id)"
+                    >
+                    ×
+                    <input
+                        type="text"
+                        id="numm2"
+                        name="mul_num2"
+                        onchange="multiplicar(this.id)"
+                    >
+                    =
+                    <input
+                        type="text"
+                        id="totalM"
+                        name="mul_total"
+                        disabled
+                    >
+                </p>
+
+                <p>
+                    <input
+                        type="text"
+                        id="numd1"
+                        name="div_num1"
+                        onchange="dividir(this.id)"
+                    >
+                    /
+                    <input
+                        type="text"
+                        id="numd2"
+                        name="div_num2"
+                        onchange="dividir(this.id)"
+                    >
+                    =
+                    <input
+                        type="text"
+                        id="totalD"
+                        name="div_total"
+                        disabled
+                    >
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
